@@ -1,10 +1,9 @@
 package ds.spring.gradle.config;
 
 import ds.spring.gradle.restful.HomeResource;
-import ds.spring.gradle.restful.MineResource;
+import ds.spring.gradle.restful.DbResource;
 import lombok.extern.slf4j.Slf4j;
 import org.mx.service.server.config.ServerConfig;
-import org.mx.spring.config.SpringRedisConfig;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,7 +30,7 @@ public class DsServiceConfig implements InitializingBean {
 
     @Bean("restfulClasses")
     public List<Class<?>> restfulClassesTest() {
-        return Arrays.asList(HomeResource.class, MineResource.class);
+        return Arrays.asList(HomeResource.class, DbResource.class);
     }
 
 }
