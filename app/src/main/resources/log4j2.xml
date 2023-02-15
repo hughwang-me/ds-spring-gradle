@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration status="debug" packages="ds.spring.gradle">
+<configuration status="info" packages="ds.spring.gradle">
 
 	<Properties>
 		<Property name="baseDir">logs</Property>
@@ -14,16 +14,16 @@
 		</Async>
 	</Appenders>
 	<Loggers>
-		<logger name="org.mx" level="debug" additivity="false">
+		<logger name="org.mx" level="info" additivity="false">
 			<appender-ref ref="async" />
 		</logger>
-		<logger name="AuditLog" level="debug" additivity="false">
+		<logger name="AuditLog" level="info" additivity="false">
 			<appender-ref ref="async" />
 		</logger>
 <!-- 		<logger name="org.hibernate.SQL" level="debug" additivity="false">
 			<appender-ref ref="async" />
 		</logger> -->
-		<root level="debug">
+		<root level="info">
 			<appender-ref ref="console" />
 		</root>
 	</Loggers>

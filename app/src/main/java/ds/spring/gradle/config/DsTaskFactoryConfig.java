@@ -36,10 +36,10 @@ public class DsTaskFactoryConfig implements InitializingBean {
         TaskFactory taskFactory = new TaskFactory();
 
         // 延迟 10 秒运行一次一个调度任务
-        taskFactory.addScheduledTask(task1, new Task.ScheduledConfig(true, 10, TimeUnit.SECONDS));
+//        taskFactory.addScheduledTask(task1, new Task.ScheduledConfig(true, 10, TimeUnit.SECONDS));
 
         // 每 4 秒运行一次一个调度任务，运行前无延时
-        taskFactory.addScheduledTask(task1, new Task.ScheduledConfig(false, 0, 4, TimeUnit.SECONDS));
+//        taskFactory.addScheduledTask(task1, new Task.ScheduledConfig(false, 0, 4, TimeUnit.SECONDS));
         return taskFactory;
     }
 }

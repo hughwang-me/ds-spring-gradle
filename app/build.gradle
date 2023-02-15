@@ -27,6 +27,7 @@ dependencies {
     implementation 'io.gitee.johnpeng:mx-spring:5.1.9'
     implementation 'io.gitee.johnpeng:mx-service-utils:5.3.10'
     implementation 'io.gitee.johnpeng:mx-dal-hibernate:5.2.4'
+//    implementation files('libs/mx-dal-hibernate-5.2.4.jar')
     implementation group: 'redis.clients', name: 'jedis', version: '3.9.0'
     implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.32'
 //    implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.32.Final'
